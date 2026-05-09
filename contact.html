@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Contact Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb')
+    no-repeat center center/cover;
+}
+
+/* MAIN CONTAINER */
+.contact-container{
+    width:90%;
+    max-width:1200px;
+    min-height:80vh;
+    display:flex;
+    border-radius:30px;
+    overflow:hidden;
+    backdrop-filter:blur(10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* LEFT SIDE */
+.contact-left{
+    width:50%;
+    padding:60px;
+    background:rgba(255,255,255,0.12);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.contact-left h1{
+    font-size:55px;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.contact-left span{
+    color:#4facfe;
+}
+
+.contact-left p{
+    line-height:1.8;
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.info-box{
+    margin-bottom:20px;
+}
+
+.info-box h3{
+    margin-bottom:5px;
+    color:#4facfe;
+}
+
+/* RIGHT SIDE */
+.contact-right{
+    width:50%;
+    background:white;
+    padding:60px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+/* FORM */
+.contact-right h2{
+    font-size:35px;
+    margin-bottom:25px;
+    color:#2874f0;
+}
+
+.input-box{
+    margin-bottom:20px;
+}
+
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#f1f5f9;
+    border-radius:15px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+    outline:none;
+    transform:scale(1.02);
+    box-shadow:0 0 15px rgba(40,116,240,0.3);
+}
+
+textarea{
+    resize:none;
+    height:130px;
+}
+
+/* BUTTON */
+.contact-btn{
+    background:linear-gradient(to right,#2874f0,#00c6ff);
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:30px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.contact-btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* SOCIAL ICONS */
+.socials{
+    margin-top:30px;
+}
+
+.socials span{
+    display:inline-block;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    text-align:center;
+    border-radius:50%;
+    background:rgba(255,255,255,0.15);
+    margin-right:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.socials span:hover{
+    background:#4facfe;
+    transform:translateY(-5px);
+}
+
+/* MOBILE */
+@media(max-width:900px){
+
+.contact-container{
+    flex-direction:column;
+}
+
+.contact-left,
+.contact-right{
+    width:100%;
+}
+
+.contact-left{
+    padding:40px;
+    text-align:center;
+}
+
+.contact-right{
+    padding:40px;
+}
+
+.contact-left h1{
+    font-size:40px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+
+        <h1>Let's Build Something <span>Amazing</span> Together ✨</h1>
+
+        <p>
+            I’m Anusha A, a passionate Full Stack Java Developer who loves
+            creating beautiful and responsive web applications.
+            Feel free to contact me for collaborations, internships,
+            or exciting opportunities.
+        </p>
+
+        <div class="info-box">
+            <h3>Email</h3>
+            <p>anuanand1121@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Phone</h3>
+            <p>+91 8088758946</p>
+        </div>
+
+        <div class="info-box">
+            <h3>Location</h3>
+            <p>Bangalore, India</p>
+        </div>
+
+        <div class="socials">
+            <span>🌐</span>
+            <span>💼</span>
+            <span>📷</span>
+            <span>🐱</span>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+
+        <h2>Get In Touch</h2>
+
+        <div class="input-box">
+            <input type="text" placeholder="Enter Your Name">
+        </div>
+
+        <div class="input-box">
+            <input type="email" placeholder="Enter Your Email">
+        </div>
+
+        <div class="input-box">
+            <input type="text" placeholder="Subject">
+        </div>
+
+        <div class="input-box">
+            <textarea placeholder="Write Your Message..."></textarea>
+        </div>
+
+        <button class="contact-btn">Send Message</button>
+
+    </div>
+
+</div>
+
+</body>
+</html>
